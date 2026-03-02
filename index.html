@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aksh Jain | CSE Engineer & Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aksh Jain - CSE Engineer & Developer Portfolio showcasing projects, skills and achievements."
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ================= IMAGE MODAL ================= -->
+    <div id="imageModal" class="image-modal">
+      <img
+        id="modalImage"
+        src="images/Aksh_2.jpeg"
+        alt="Aksh Jain Full Resolution"
+      />
+    </div>
+
+    <!-- ================= LOADING SCREEN ================= -->
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loading-container">
+        <div class="loading-circle">
+          <svg class="loading-svg" viewBox="0 0 100 100">
+            <circle class="loading-track" cx="50" cy="50" r="45" />
+            <circle class="loading-progress" cx="50" cy="50" r="45" />
+          </svg>
+          <div class="loading-percentage"><span id="percentage">0</span>%</div>
+        </div>
+        <p class="loading-text">Loading your experience...</p>
+      </div>
+    </div>
+
+    <!-- ================= PROFILE SHOWCASE ================= -->
+    <div id="profileShowcase" class="profile-showcase">
+      <div class="showcase-content">
+        <img
+          id="showcaseImg"
+          src="images/Aksh.jpeg"
+          alt="Aksh Jain"
+          class="showcase-image"
+        />
+        <div class="showcase-glow"></div>
+      </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar hidden">
+      <ul class="nav-left">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Technologies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a
+          href="https://github.com/AkshJain-17"
+          target="_blank"
+          class="icon"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aksh-jain-58a705203/"
+          target="_blank"
+          class="icon"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://linktr.ee/akshjain1"
+          target="_blank"
+          class="icon"
+          aria-label="All Links"
+        >
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="text hidden">
+          <h3>Hello There 👋</h3>
+          <h1>I am <span>Aksh Jain</span></h1>
+          <p>Aspiring CSE Engineer & Developer</p>
+
+          <div class="buttons">
+            <a href="#projects" class="btn">View My Projects</a>
+            <a
+              href="assets/Resume.pdf"
+              download="Aksh_Jain_Resume.pdf"
+              class="btn-outline"
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="profile hidden">
+          <img
+            id="profileImage"
+            src="images/Aksh_2.jpeg"
+            alt="Aksh Jain Profile Photo"
+            loading="lazy"
+            class="clickable-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about-section hidden">
+      <h2 class="section-title">ABOUT ME</h2>
+
+      <p class="about-text">
+        I am a B.Tech CSE undergraduate at AKTU University with a strong
+        foundation in programming, and web development. Skilled in C, Python,
+        and modern web technologies, I am passionate about problem-solving and
+        continuous learning. I aim to apply my technical expertise to contribute
+        to impactful software development projects.
+      </p>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="skills-section hidden">
+      <h2 class="section-title">SKILLS</h2>
+
+      <p class="skills-subtext">
+        Skills, tools and technologies I use to build scalable and intelligent systems.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-item hidden">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+        <div class="skill-item hidden">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill-item hidden">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item hidden">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill-item hidden">
+          <i class="fas fa-terminal"></i>
+          <p>C Programming</p>
+        </div>
+        <div class="skill-item hidden">
+          <i class="fas fa-cube"></i>
+          <p>3D Printing</p>
+        </div>
+        <div class="skill-item hidden">
+          <i class="fas fa-cut"></i>
+          <p>CO2 Laser Printing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects-section hidden">
+      <h2 class="section-title">MY PROJECTS</h2>
+
+      <!-- ===== Project 1 ===== -->
+      <div class="project-wrapper reverse hidden">
+        <div class="project-image">
+          <img
+            src="images/face_recognition_attendance_system.png"
+            alt="Face Recognition Attendance System Screenshot"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="project-content">
+          <h3>🎯 Face Recognition Attendance System</h3>
+          <p>
+            A secure attendance system integrating real-time face recognition,
+            liveness detection (anti-spoofing), and geo-fencing validation to
+            prevent fraudulent attendance marking.
+          </p>
+
+          <p class="tech-stack">
+            <strong>Tech Stack:</strong> Python · OpenCV · CVZone · Geopy ·
+            Pandas · Tkinter
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/AkshJain-17/face-recognition-attendance-system"
+              target="_blank"
+              class="repo-btn"
+            >
+              <i class="fab fa-github"></i> Repository
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Project 2 ===== -->
+      <div class="project-wrapper hidden">
+        <div class="project-image">
+          <img
+            src="images/relevant_cv_generator.png"
+            alt="Advanced CV Generator Web Application Screenshot"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="project-content">
+          <h3>🎨🧑‍💼 Advanced CV Generator</h3>
+
+          <p>
+            The Advanced CV Generator is a modern, interactive web application developed using
+            HTML, CSS, and JavaScript.
+          </p>
+
+          <p>
+            It allows users to create a professional and visually attractive CV by entering their
+            personal, academic, and professional details. The application includes colorful 
+            graphics, gradient CV themes, background theme selection, icons, profile photo upload,
+            and an option to download the CV as a PDF.
+          </p>
+
+          <p class="tech-stack">
+            <strong>Tech Stack:</strong>
+            HTML · CSS · JavaScript
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/AkshJain-17/generate_relevant_cv"
+              target="_blank"
+              class="repo-btn"
+            >
+              <i class="fab fa-github"></i> Repository
+            </a>
+
+            <a
+              href="https://akshjain-17.github.io/generate_relevant_cv/"
+              target="_blank"
+              class="live-btn"
+            >
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    <!-- ===== Project 3 ===== -->
+      <div class="project-wrapper hidden">
+        <div class="project-image">
+          <img
+            src="images/language_translator.png"
+            alt="Language Translator Web Application Screenshot"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="project-content">
+          <h3>📓🖊️ Language Translator</h3>
+
+          <p>
+            The Language Translator is a modern, interactive web application developed using
+            HTML, CSS, and JavaScript.
+          </p>
+
+          <p>
+            A comprehensive Python language translator supporting 50 most spoken and used 
+            languages worldwide. Features Desktop App, CLI, and REST API.
+          </p>
+
+          <p class="tech-stack">
+            <strong>Tech Stack:</strong>
+            HTML · CSS · JavaScript
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/AkshJain-17/language_translator"
+              target="_blank"
+              class="repo-btn"
+            >
+              <i class="fab fa-github"></i> Repository
+            </a>
+
+            <a
+              href="https://akshjain-17.github.io/language_translator/"
+              target="_blank"
+              class="live-btn"
+            >
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements" class="hidden">
+      <h2 class="section-title">CERTIFICATIONS</h2>
+
+      <!-- <div class="card hidden">
+        <h3>Achievements</h3>
+        <ul>
+          <li>Front-End Development Intern at SpikeTech (September 2025)</li>
+        </ul>
+      </div> -->
+
+      <div class="card hidden">
+        <h3>Certifications</h3>
+        <ul>
+          <li>Object Oriented Programming in Python at Infosys</li>
+          <li>Data Analytics Job Simulation at Deloitte Australia</li>
+          <li>Introduction to Generative AI Studio by Google Cloud at Simplilearn</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact-section hidden">
+      <h2 class="section-title">LET'S CONNECT</h2>
+
+      <p class="contact-subtext">
+        Open to internships, collaborations, and exciting tech opportunities.
+      </p>
+
+      <div class="contact-container">
+        <a href="mailto:akshjainha@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>akshjainha@gmail.com</p>
+        </a>
+
+        <a
+          href="https://github.com/AkshJain-17"
+          target="_blank"
+          class="contact-card"
+        >
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>github.com/AkshJain-17</p>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/aksh-jain-58a705203/"
+          target="_blank"
+          class="contact-card"
+        >
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/aksh-jain-58a705203</p>
+        </a>
+
+        <a
+          href="https://linktr.ee/akshjain1"
+          target="_blank"
+          class="contact-card"
+        >
+          <i class="fas fa-link"></i>
+          <h3>All Links</h3>
+          <p>linktr.ee/akshjain1</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>© 2026 Aksh Jain | Designed & Built with Passion 🚀</footer>
+
+    <!-- ================= LOADING & PROFILE SHOWCASE ================= -->
+    <script>
+      // Define observer first - needed by loading script
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            } else {
+              entry.target.classList.remove("show");
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+
+      // Loading Screen with Timer
+      const loadingScreen = document.getElementById("loadingScreen");
+      const profileShowcase = document.getElementById("profileShowcase");
+      const percentageSpan = document.getElementById("percentage");
+
+      let currentPercentage = 0;
+
+      function simulateLoading() {
+        const interval = setInterval(() => {
+          currentPercentage += Math.random() * 30;
+          if (currentPercentage > 90) {
+            currentPercentage = 90;
+          }
+          percentageSpan.textContent = Math.floor(currentPercentage);
+
+          // Update SVG progress circle
+          const circle = document.querySelector(".loading-progress");
+          const circumference = 2 * Math.PI * 45;
+          const offset =
+            circumference - (currentPercentage / 100) * circumference;
+          circle.style.strokeDashoffset = offset;
+
+          if (currentPercentage >= 90) {
+            clearInterval(interval);
+            completeLoading();
+          }
+        }, 200);
+      }
+
+      function completeLoading() {
+        percentageSpan.textContent = "100";
+        const circle = document.querySelector(".loading-progress");
+        circle.style.strokeDashoffset = 0;
+
+        setTimeout(() => {
+          loadingScreen.classList.add("fade-out");
+          profileShowcase.classList.add("show-showcase");
+
+          setTimeout(() => {
+            loadingScreen.style.display = "none";
+            document.querySelector(".navbar").classList.remove("hidden");
+            document.querySelector(".hero").classList.remove("hidden");
+
+            // Hide profile showcase after 1 second and show full page
+            setTimeout(() => {
+              profileShowcase.classList.add("hide-showcase");
+              document.querySelectorAll(".hidden").forEach((el) => {
+                observer.observe(el);
+              });
+            }, 1000);
+          }, 500);
+        }, 300);
+      }
+
+      // Start loading
+      simulateLoading();
+
+      // Image Modal Functionality
+      const profileImage = document.getElementById("profileImage");
+      const imageModal = document.getElementById("imageModal");
+
+      // Open modal when clicking profile image
+      if (profileImage) {
+        profileImage.addEventListener("click", () => {
+          imageModal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      }
+
+      // Close modal when clicking anywhere on the modal
+      imageModal.addEventListener("click", (e) => {
+        imageModal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      });
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && imageModal.classList.contains("active")) {
+          imageModal.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      });
+    </script>
+  </body>
+</html>
